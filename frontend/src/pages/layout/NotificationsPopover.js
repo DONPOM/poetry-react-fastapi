@@ -68,7 +68,7 @@ const NotificationsPopover = () => {
                         primary="Notification Title"
                         secondary='This is the description of the notification that is displayed to tne user'
                       />
-                      <ListItemText primary="Tue" type="light" style={{ fontWeight: 'medium' }} />
+                      <ListItemText primary="Tue" type="light" style={{ padding: 1 }} />
                     </ListItemButton>
                   </ListItem>
                   <ListItem to='/settings' dense={true} disablePadding>
@@ -81,9 +81,9 @@ const NotificationsPopover = () => {
                     </ListItemButton>
                   </ListItem>
                   <Divider />
-                  <ListItem dense={true} disablePadding>
-                    <ListItemButton>
-                      <ListItemText primary="Log Out" />
+                  <ListItem alignItems='center' dense={true} disablePadding>
+                    <ListItemButton alignItems='center'>
+                      <ListItemText type='primary' primary="View All" />
                     </ListItemButton>
                   </ListItem>
                 </List>
