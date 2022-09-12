@@ -56,9 +56,9 @@ const NotificationsPopover = () => {
             >
               <Box
                 sx={{ width: PopoverWidth }}>
-                <List>
-                <ListItem dense={true}>
-                <ListItemText primary={<Typography type="primary" style={{ fontWeight: 'medium' }}>Notifications</Typography>} />
+                <List disablePadding>
+                <ListItem dense={true} sx={{backgroundColor: 'secondary.main'}} >
+                <ListItemText primary={<Typography variant='subtitle1' style={{ fontWeight: 'medium' }}>Notifications</Typography>} />
                 </ListItem>
 
                   <Divider />
@@ -66,23 +66,23 @@ const NotificationsPopover = () => {
                     <ListItemButton>
                     <ListItemText
                         primary="Notification Title"
-                        secondary='This is the description of the notification that is displayed to tne user'
+                        secondary='This is the description of the notification that is displayed to the user'
                       />
-                      <ListItemText primary="Tue" type="light" style={{ padding: 1 }} />
+                      <Box style={{ padding: 5 }} ><ListItemText primary="Tue" type="light"/></Box>
                     </ListItemButton>
                   </ListItem>
                   <ListItem to='/settings' dense={true} disablePadding>
                   <ListItemButton>
                     <ListItemText
                         primary="Notification Title"
-                        secondary='This is the description of the notification that is displayed to tne user'
+                        secondary='This is the description of the notification that is displayed to the user'
                       />
-                      <ListItemText primary="Tue" />
+                      <Box style={{ padding: 5 }} ><ListItemText primary="Tue" type="light"/></Box>
                     </ListItemButton>
                   </ListItem>
                   <Divider />
                   <ListItem alignItems='center' dense={true} disablePadding>
-                    <ListItemButton alignItems='center'>
+                    <ListItemButton sx={{textAlign: 'center'}}>
                       <ListItemText type='primary' primary="View All" />
                     </ListItemButton>
                   </ListItem>
